@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".HomeActivity">
+
+    <EditText
+        android:id="@+id/home_search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/home_rl_1"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="14dp"
+        android:hint="@string/search_or_enter_url"
+        android:height="50dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <RelativeLayout
+        android:id="@+id/home_rl_1"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_width="50dp"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/home_search_button"
+            android:background="@drawable/ic_search"
+            android:layout_centerInParent="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/home_facebook_button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@color/darkBlue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="@string/facebook"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/home_youtube_button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:text="@string/youtube"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/home_google_button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_orange_dark"
+                android:textStyle="bold"
+                android:text="@string/google"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/home_instagram_button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@color/darkPink"
+                android:textColor="@android:color/white"
+                android:text="@string/instagram"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/home_github_button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/black"
+                android:text="@string/github"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/home_yahoo_button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@color/purple"
+                android:text="@string/yahoo"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:text="@string/app_name"
+            android:textSize="32sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/my_tag"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

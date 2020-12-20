@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchedURLActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_width="44dp"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/searched_url_home_button"
+            android:background="@drawable/ic_home"
+            android:layout_centerInParent="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/searched_url_search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/home_search_button"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/rl_1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="14dp"
+        android:hint="@string/search_or_enter_url"
+        android:height="50dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_width="50dp"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/searched_url_search_button"
+            android:background="@drawable/ic_search"
+            android:layout_centerInParent="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/searched_url_web_view"
+        android:layout_below="@+id/searched_url_search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
